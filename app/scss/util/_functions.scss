@@ -1,0 +1,32 @@
+@use "sass:math";
+
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+@function rem($pixels, $context: 16) {
+  @return (math.div($pixels, $context)) * 1rem;
+}
+
+@-webkit-keyframes arrowInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  30%,
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  30%,
+  80% {
+    opacity: 1;
+  }
+}
